@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Connect4 - P1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Player One 🔵</a>
+        <a href="index.html"><button class="btn btn-secondary ml-auto" type="submit">Logout</button></a>
+      </div>
+    </nav>
+
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col-4">
+          <table class="table">
+            <h2>Game Stats:</h2>
+            <tbody>
+              <tr>
+                <td>Current Turn</td>
+                <td>IDK</td>
+              </tr>
+              <tr>
+                <td>Current Round</td>
+                <td>IDK</td>
+              </tr>
+              <tr>
+                <td>Time Elapsed</td>
+                <td>IDK</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-8">
+          <table class="table-bordered">
+            <tbody>
+              <tr>
+                <td id="row-0-col-0"><h1>⚪</h1></td>
+                <td id="row-0-col-1"><h1>⚪</h1></td>
+                <td id="row-0-col-2"><h1>⚪</h1></td>
+                <td id="row-0-col-3"><h1>⚪</h1></td>
+                <td id="row-0-col-4"><h1>⚪</h1></td>
+                <td id="row-0-col-5"><h1>⚪</h1></td>
+                <td id="row-0-col-6"><h1>⚪</h1></td>
+              </tr>
+              <tr>
+                <td id="row-1-col-0"><h1>⚪</h1></td>
+                <td id="row-1-col-1"><h1>⚪</h1></td>
+                <td id="row-1-col-2"><h1>⚪</h1></td>
+                <td id="row-1-col-3"><h1>⚪</h1></td>
+                <td id="row-1-col-4"><h1>⚪</h1></td>
+                <td id="row-1-col-5"><h1>⚪</h1></td>
+                <td id="row-1-col-6"><h1>⚪</h1></td>
+              </tr>
+              <tr>
+                <td id="row-2-col-0"><h1>⚪</h1></td>
+                <td id="row-2-col-1"><h1>⚪</h1></td>
+                <td id="row-2-col-2"><h1>⚪</h1></td>
+                <td id="row-2-col-3"><h1>⚪</h1></td>
+                <td id="row-2-col-4"><h1>⚪</h1></td>
+                <td id="row-2-col-5"><h1>⚪</h1></td>
+                <td id="row-2-col-6"><h1>⚪</h1></td>
+              </tr>
+              <tr>
+                <td id="row-3-col-0"><h1>⚪</h1></td>
+                <td id="row-3-col-1"><h1>⚪</h1></td>
+                <td id="row-3-col-2"><h1>⚪</h1></td>
+                <td id="row-3-col-3"><h1>⚪</h1></td>
+                <td id="row-3-col-4"><h1>⚪</h1></td>
+                <td id="row-3-col-5"><h1>⚪</h1></td>
+                <td id="row-3-col-6"><h1>⚪</h1></td>
+              </tr>
+              <tr>
+                <td id="row-4-col-0"><h1>⚪</h1></td>
+                <td id="row-4-col-1"><h1>⚪</h1></td>
+                <td id="row-4-col-2"><h1>⚪</h1></td>
+                <td id="row-4-col-3"><h1>⚪</h1></td>
+                <td id="row-4-col-4"><h1>⚪</h1></td>
+                <td id="row-4-col-5"><h1>⚪</h1></td>
+                <td id="row-4-col-6"><h1>⚪</h1></td>
+              </tr>
+              <tr>
+                <td id="row-5-col-0"><h1>⚪</h1></td>
+                <td id="row-5-col-1"><h1>⚪</h1></td>
+                <td id="row-5-col-2"><h1>⚪</h1></td>
+                <td id="row-5-col-3"><h1>⚪</h1></td>
+                <td id="row-5-col-4"><h1>⚪</h1></td>
+                <td id="row-5-col-5"><h1>⚪</h1></td>
+                <td id="row-5-col-6"><h1>⚪</h1></td>
+              </tr>
+              <tr>
+                <td id="drop-col-0"><h1><a><button type="button" class="btn btn-primary" disabled>Drop</button></a></h1></td>
+                <td id="drop-col-1"><h1><a><button type="button" class="btn btn-primary" disabled>Drop</button></a></h1></td>
+                <td id="drop-col-2"><h1><a><button type="button" class="btn btn-primary" disabled>Drop</button></a></h1></td>
+                <td id="drop-col-3"><h1><a><button type="button" class="btn btn-primary" disabled>Drop</button></a></h1></td>
+                <td id="drop-col-4"><h1><a><button type="button" class="btn btn-primary" disabled>Drop</button></a></h1></td>
+                <td id="drop-col-5"><h1><a><button type="button" class="btn btn-primary" disabled>Drop</button></a></h1></td>
+                <td id="drop-col-6"><h1><a><button type="button" class="btn btn-primary" disabled>Drop</button></a></h1></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
