@@ -113,4 +113,4 @@ function configureResetButton(){
 configureResetButton();
 setButtonFunctions();
 updateGameState();
-var updatingBoard = setInterval(updateGameState, 5000);
+var updatingBoard = setInterval(updateGameState, 1000);
