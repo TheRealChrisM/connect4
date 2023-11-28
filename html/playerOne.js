@@ -8,7 +8,7 @@ function updateGameState(){
     .then((result)=> {
 		updateBoard(result.boardState);
         updateStats(result.playerControl, result.currentRound, result.timeElapsedInSeconds, result.winner);
-        updateButtons(result.playerControl);
+        updateButtons(result.playerControl, result.winner);
 	})
 }
 
@@ -57,8 +57,8 @@ function updateStats(currentTurn, currentRound, timeElapsed, winner){
     
 }
 
-function updateButtons(playerControl){
-    if ((playerControl == 1)&&(winner == false)){
+function updateButtons(playerControl, winner){
+    if ((playerControl == 1)&&(winner == null)){
         document.getElementById("drop-col-0").disabled = false;
         document.getElementById("drop-col-1").disabled = false;
         document.getElementById("drop-col-2").disabled = false;
@@ -103,6 +103,14 @@ async function dropToken(player, column){
 		updateGameState();
 	})
 }
+
+function configureResetButton(){
+    document.getElementById("reset-game-button").onclick=function() {
+        fetch("https://kasm.io/api/connect4/reset");
+    }
+}
+
+configureResetButton();
 setButtonFunctions();
 updateGameState();
 var updatingBoard = setInterval(updateGameState, 5000);
