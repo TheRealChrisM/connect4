@@ -11,7 +11,10 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container">
         <a class="navbar-brand" href="#">Player One 🔵</a>
-        <a href="index.html"><button class="btn btn-secondary ml-auto" type="submit">Logout</button></a>
+        <div class="ml-auto">
+          <button class="btn btn-outline-danger" type="submit" id="reset-game-button">Reset</button>
+          <a href="index.html"><button class="btn btn-secondary" type="submit">Logout</button></a>
+        </div>
       </div>
     </nav>
 
@@ -98,13 +101,13 @@
                 <td id="row-0-col-6"><h1>⚪</h1></td>
               </tr>
               <tr>
-                <td id="drop-col-0"><h1><a><button type="button" class="btn btn-primary" disabled>Drop</button></a></h1></td>
-                <td id="drop-col-1"><h1><a><button type="button" class="btn btn-primary" disabled>Drop</button></a></h1></td>
-                <td id="drop-col-2"><h1><a><button type="button" class="btn btn-primary" disabled>Drop</button></a></h1></td>
-                <td id="drop-col-3"><h1><a><button type="button" class="btn btn-primary" disabled>Drop</button></a></h1></td>
-                <td id="drop-col-4"><h1><a><button type="button" class="btn btn-primary" disabled>Drop</button></a></h1></td>
-                <td id="drop-col-5"><h1><a><button type="button" class="btn btn-primary" disabled>Drop</button></a></h1></td>
-                <td id="drop-col-6"><h1><a><button type="button" class="btn btn-primary" disabled>Drop</button></a></h1></td>
+                <td><h1><a><button type="button" class="btn btn-primary" id="drop-col-0" disabled>Drop</button></a></h1></td>
+                <td><h1><a><button type="button" class="btn btn-primary" id="drop-col-1" disabled>Drop</button></a></h1></td>
+                <td><h1><a><button type="button" class="btn btn-primary" id="drop-col-2" disabled>Drop</button></a></h1></td>
+                <td><h1><a><button type="button" class="btn btn-primary" id="drop-col-3" disabled>Drop</button></a></h1></td>
+                <td><h1><a><button type="button" class="btn btn-primary" id="drop-col-4" disabled>Drop</button></a></h1></td>
+                <td><h1><a><button type="button" class="btn btn-primary" id="drop-col-5" disabled>Drop</button></a></h1></td>
+                <td><h1><a><button type="button" class="btn btn-primary" id="drop-col-6" disabled>Drop</button></a></h1></td>
               </tr>
             </tbody>
           </table>

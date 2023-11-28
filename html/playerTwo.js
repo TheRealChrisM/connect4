@@ -58,7 +58,7 @@ function updateStats(currentTurn, currentRound, timeElapsed, winner){
 }
 
 function updateButtons(playerControl){
-    if ((playerControl == 1)&&(winner == false)){
+    if ((playerControl == 2) && (winner==false)){
         document.getElementById("drop-col-0").disabled = false;
         document.getElementById("drop-col-1").disabled = false;
         document.getElementById("drop-col-2").disabled = false;
@@ -83,7 +83,7 @@ function setButtonFunctions(){
     for (let col = 0; col <=6; col++){
         let buttonId = buttonIdPrefix+col;
         document.getElementById(buttonId).onclick=function(){
-            dropToken(1, col);
+            dropToken(2, col);
         }
     }
 }
