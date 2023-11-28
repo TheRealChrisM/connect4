@@ -23,15 +23,19 @@
             <tbody>
               <tr>
                 <td>Current Turn</td>
-                <td>IDK</td>
+                <td id="stats-current-turn">IDK</td>
               </tr>
               <tr>
                 <td>Current Round</td>
-                <td>IDK</td>
+                <td id="stats-current-round">IDK</td>
               </tr>
               <tr>
                 <td>Time Elapsed</td>
-                <td>IDK</td>
+                <td id="stats-time-elapsed">IDK</td>
+              </tr>
+              <tr>
+                <td>Winner</td>
+                <td id="stats-winner">IDK</td>
               </tr>
             </tbody>
           </table>
@@ -40,40 +44,13 @@
           <table class="table-bordered">
             <tbody>
               <tr>
-                <td id="row-0-col-0"><h1>⚪</h1></td>
-                <td id="row-0-col-1"><h1>⚪</h1></td>
-                <td id="row-0-col-2"><h1>⚪</h1></td>
-                <td id="row-0-col-3"><h1>⚪</h1></td>
-                <td id="row-0-col-4"><h1>⚪</h1></td>
-                <td id="row-0-col-5"><h1>⚪</h1></td>
-                <td id="row-0-col-6"><h1>⚪</h1></td>
-              </tr>
-              <tr>
-                <td id="row-1-col-0"><h1>⚪</h1></td>
-                <td id="row-1-col-1"><h1>⚪</h1></td>
-                <td id="row-1-col-2"><h1>⚪</h1></td>
-                <td id="row-1-col-3"><h1>⚪</h1></td>
-                <td id="row-1-col-4"><h1>⚪</h1></td>
-                <td id="row-1-col-5"><h1>⚪</h1></td>
-                <td id="row-1-col-6"><h1>⚪</h1></td>
-              </tr>
-              <tr>
-                <td id="row-2-col-0"><h1>⚪</h1></td>
-                <td id="row-2-col-1"><h1>⚪</h1></td>
-                <td id="row-2-col-2"><h1>⚪</h1></td>
-                <td id="row-2-col-3"><h1>⚪</h1></td>
-                <td id="row-2-col-4"><h1>⚪</h1></td>
-                <td id="row-2-col-5"><h1>⚪</h1></td>
-                <td id="row-2-col-6"><h1>⚪</h1></td>
-              </tr>
-              <tr>
-                <td id="row-3-col-0"><h1>⚪</h1></td>
-                <td id="row-3-col-1"><h1>⚪</h1></td>
-                <td id="row-3-col-2"><h1>⚪</h1></td>
-                <td id="row-3-col-3"><h1>⚪</h1></td>
-                <td id="row-3-col-4"><h1>⚪</h1></td>
-                <td id="row-3-col-5"><h1>⚪</h1></td>
-                <td id="row-3-col-6"><h1>⚪</h1></td>
+                <td id="row-5-col-0"><h1>⚪</h1></td>
+                <td id="row-5-col-1"><h1>⚪</h1></td>
+                <td id="row-5-col-2"><h1>⚪</h1></td>
+                <td id="row-5-col-3"><h1>⚪</h1></td>
+                <td id="row-5-col-4"><h1>⚪</h1></td>
+                <td id="row-5-col-5"><h1>⚪</h1></td>
+                <td id="row-5-col-6"><h1>⚪</h1></td>
               </tr>
               <tr>
                 <td id="row-4-col-0"><h1>⚪</h1></td>
@@ -85,13 +62,40 @@
                 <td id="row-4-col-6"><h1>⚪</h1></td>
               </tr>
               <tr>
-                <td id="row-5-col-0"><h1>⚪</h1></td>
-                <td id="row-5-col-1"><h1>⚪</h1></td>
-                <td id="row-5-col-2"><h1>⚪</h1></td>
-                <td id="row-5-col-3"><h1>⚪</h1></td>
-                <td id="row-5-col-4"><h1>⚪</h1></td>
-                <td id="row-5-col-5"><h1>⚪</h1></td>
-                <td id="row-5-col-6"><h1>⚪</h1></td>
+                <td id="row-3-col-0"><h1>⚪</h1></td>
+                <td id="row-3-col-1"><h1>⚪</h1></td>
+                <td id="row-3-col-2"><h1>⚪</h1></td>
+                <td id="row-3-col-3"><h1>⚪</h1></td>
+                <td id="row-3-col-4"><h1>⚪</h1></td>
+                <td id="row-3-col-5"><h1>⚪</h1></td>
+                <td id="row-3-col-6"><h1>⚪</h1></td>
+              </tr>
+              <tr>
+                <td id="row-2-col-0"><h1>⚪</h1></td>
+                <td id="row-2-col-1"><h1>⚪</h1></td>
+                <td id="row-2-col-2"><h1>⚪</h1></td>
+                <td id="row-2-col-3"><h1>⚪</h1></td>
+                <td id="row-2-col-4"><h1>⚪</h1></td>
+                <td id="row-2-col-5"><h1>⚪</h1></td>
+                <td id="row-2-col-6"><h1>⚪</h1></td>
+              </tr>
+              <tr>
+                <td id="row-1-col-0"><h1>⚪</h1></td>
+                <td id="row-1-col-1"><h1>⚪</h1></td>
+                <td id="row-1-col-2"><h1>⚪</h1></td>
+                <td id="row-1-col-3"><h1>⚪</h1></td>
+                <td id="row-1-col-4"><h1>⚪</h1></td>
+                <td id="row-1-col-5"><h1>⚪</h1></td>
+                <td id="row-1-col-6"><h1>⚪</h1></td>
+              </tr>
+              <tr>
+                <td id="row-0-col-0"><h1>⚪</h1></td>
+                <td id="row-0-col-1"><h1>⚪</h1></td>
+                <td id="row-0-col-2"><h1>⚪</h1></td>
+                <td id="row-0-col-3"><h1>⚪</h1></td>
+                <td id="row-0-col-4"><h1>⚪</h1></td>
+                <td id="row-0-col-5"><h1>⚪</h1></td>
+                <td id="row-0-col-6"><h1>⚪</h1></td>
               </tr>
               <tr>
                 <td id="drop-col-0"><h1><a><button type="button" class="btn btn-primary" disabled>Drop</button></a></h1></td>
@@ -109,6 +113,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <script src="playerOne.js"></script>
   </body>
 </html>
